@@ -19,7 +19,7 @@
                     <img src="images/logoProModaLojaFabrica.png" width="125px"  alt="ProModaStore">
                 </div>
                 <nav>
-                    <ul>
+                    <ul id="MenuItems">
                         <li><a href="">Home</a></li>
                         <li><a href="">Produtos</a></li>
                         <li><a href="">Sobre</a></li>
@@ -28,13 +28,13 @@
                     </ul>
                 </nav>
                 <img src="images/cart.png" width="30px" height="30px" alt="Carrinho">
+                <img src="images/menu.png"class="menu-icon" onclick="menutoggle()">
             </div>
             <div class="row">
                 <div class="col-2">
-                    <h1>Dê aos Seus Produtos<br>um Novo Estilo!</h1>
+                    <h1>Dê aos Seus Produtos<br>uma Nova Identidade.</h1>
                     <p>
-                        O Sucesso nem sempre tem a ver com Grandeza. É uma questão de Consistência.<br>Trabalho consistente atinge o Sucesso.
-                        A Grandeza é apenas uma consequencia.
+                        Entre em contato conosco para juntos produzirmos uma nova identidade para seu produto, inserindo tecnologias que agregam valor e qualidade <br>interferindo o mínimo possível no custo.
                     </p>
                     <a href="" class="btn">Iniciar &#8594;</a>
                 </div>
@@ -232,7 +232,7 @@
                     <p>Disponível Exclusivamente na Pro Moda Store</p>
                     <h1>Lençol 70 mil fios</h1>
                     <small>
-                        O lençol de 70 mil fios não existe, isto é só um exemplo de texto.
+                        O lençol de 70 mil fios poderia existir, mas não existe, isto é só um exemplo de texto que foi inserido com todo cuidado neste site maravilhoso e criativo.
                     </small>
                     <a href="" class="btn">Compre Agora &#8594;</a>
                 </div>
@@ -333,7 +333,7 @@
                 </div>
                 <div class="footer-col-2">
                     <img src="images/logoProModaLojaFabricaWhite.png" alt="">
-                    <p>Faça download do aplicativo para Android mobile phone.</p>
+                    <p>Entre em contato conosco para juntos produzirmos uma nova identidade para seu produto, inserindo tecnologias que agregam valor e qualidade interferindo o mínimo possível no custo.</p>
                  </div>
                  <div class="footer-col-3">
                     <h3>Links Úteis</h3>
@@ -359,6 +359,22 @@
         </div>
     </div>
 
+<!------ JS FOR TOGGLE MENU ------->
+
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else{
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
 
 </body>
 </html>
