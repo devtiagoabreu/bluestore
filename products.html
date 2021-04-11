@@ -4,68 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pro Moda Store</title>
+    <title>Produtos - Pro Moda Store</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div class="header">
-        <div class="container">
-            <div class="navbar">
-                <div class="logo">
-                    <img src="images/logoProModaLojaFabrica.png" width="125px"  alt="ProModaStore">
-                </div>
-                <nav>
-                    <ul id="MenuItems">
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Produtos</a></li>
-                        <li><a href="">Sobre</a></li>
-                        <li><a href="">Contato</a></li>
-                        <li><a href="">Conta</a></li>
-                    </ul>
-                </nav>
-                <img src="images/cart.png" width="30px" height="30px" alt="Carrinho">
-                <img src="images/menu.png"class="menu-icon" onclick="menutoggle()">
+   
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/logoProModaLojaFabrica.png" width="125px"  alt="ProModaStore">
             </div>
-            <div class="row">
-                <div class="col-2">
-                    <h1>Dê aos Seus Produtos<br>uma Nova Identidade.</h1>
-                    <p>
-                        Entre em contato conosco para juntos produzirmos uma nova identidade para seu produto, inserindo tecnologias que agregam valor e qualidade <br>interferindo o mínimo possível no custo.
-                    </p>
-                    <a href="" class="btn">Iniciar &#8594;</a>
-                </div>
-                <div class="col-2">
-                    <img src="images/image1ok.png" alt="">
-                </div>
-            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Produtos</a></li>
+                    <li><a href="">Sobre</a></li>
+                    <li><a href="">Contato</a></li>
+                    <li><a href="">Conta</a></li>
+                </ul>
+            </nav>
+            <img src="images/cart.png" width="30px" height="30px" alt="Carrinho">
+            <img src="images/menu.png"class="menu-icon" onclick="menutoggle()">
         </div>
     </div>
 
-<!----- FEATURED CATEGORIES (CATEGORIAS EM DESTAUE) -------->
-
-    <div class="categories">
-        <div class="small-container">
-            <div class="row">
-                <div class="col-3">
-                    <img src="images/sarja001.jpg" alt="Sarja Neto-line Cinza">
-                </div>
-                <div class="col-3">
-                    <img src="images/sarja002.jpg" alt="Sarja Neto-line Vermelha">
-                </div>
-                <div class="col-3">
-                    <img src="images/sarja003.jpg" alt="Sarja Neto-line Preta">
-                </div>
-            </div>
-        </div>
-    </div>
-
-<!----- FEATURED PRODUCTS (PRODUTOS EM DESTAUE) -------->
+<!----- PRODUTOS -------->
 
     <div class="small-container">
-        <h2 class="title">Produtos em Destaque</h2>
+        <div class="row row-2">
+            <h2>Nossos Produtos</h2>
+            <select>
+                <option>Todos</option>
+                <option>Menor Valor</option>
+                <option>Mais Procurados</option>
+                <option>Melhor Avaliação</option>
+                <option>Mais Vendidos</option>
+            </select>
+        </div>
+        
         <div class="row">
             <div class="col-4">
                 <img src="images/sarja004.jpg" alt="">
@@ -116,7 +95,6 @@
                 <p>R$15,00</p>
             </div>
         </div>
-        <h2 class="title">Produtos mais recentes</h2>
         <div class="row">
             <div class="col-4">
                 <img src="images/sarja004.jpg" alt="">
@@ -217,103 +195,12 @@
                 <p>R$15,00</p>
             </div>
         </div>
-    </div>
-
-<!------ OFFER ------->
-
-    <div class="offer">
-        <div class="small-container">
-            <div class="row">
-                <div class="col-2">
-                    <img src="images/sarja004.jpg" class="offer-img"alt="">
-                </div>
-                <div class="col-2">
-                    <p>Disponível Exclusivamente na Pro Moda Store</p>
-                    <h1>Lençol 70 mil fios</h1>
-                    <small>
-                        O lençol de 70 mil fios poderia existir, mas não existe, isto é só um exemplo de texto que foi inserido com todo cuidado neste site maravilhoso e criativo.
-                    </small>
-                    <a href="" class="btn">Compre Agora &#8594;</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-<!------ TESTIMONIAL ------->
-
-    <div class="testimonial">
-        <div class="small-container">
-            <div class="row">
-                <div class="col-3">
-                    <i class="fa fa-quote-left"></i>
-                   <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                   </p>
-                   <i class="fa fa-quote-right"></i>
-                   <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-o"></i>
-                    </div>
-                    <img src="images/user-1.png" alt="">
-                    <h3>Marina Pereira Cano de Abreu</h3> 
-                </div>
-                <div class="col-3">
-                    <i class="fa fa-quote-left"></i>
-                   <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                   </p>
-                   <i class="fa fa-quote-right"></i>
-                   <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-o"></i>
-                    </div>
-                    <img src="images/user-2.png" alt="">
-                    <h3>Tiago de Abreu</h3> 
-                </div>
-                <div class="col-3">
-                    <i class="fa fa-quote-left"></i>
-                   <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                   </p>
-                   <i class="fa fa-quote-right"></i>
-                   <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-o"></i>
-                    </div>
-                    <img src="images/user-3.png" alt="">
-                    <h3>Rosa Maria Cano de Abreu</h3> 
-                </div>
-            </div>
-        </div>
-    </div>
-
-<!------ BRANDS ------->
-
-    <div class="brands">
-        <div class="small-container">
-            <div class="row">
-                <div class="col-5">
-                    <img src="images/renner-logo-5.png" alt="Renner">
-                </div>
-                <div class="col-5">
-                    <img src="images/calvin-klein-logo-6.png" alt="Calvin Klein">
-                </div>
-                <div class="col-5">
-                    <img src="images/lacoste-logo.png" alt="Lacoste">
-                </div>
-                <div class="col-5">
-                    <img src="images/colcci-logo-4.png" alt="Colcci">
-                </div>
-            </div>
+        <div class="page-btn">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>&#8594;</span>
         </div>
     </div>
 
